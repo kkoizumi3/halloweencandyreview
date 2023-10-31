@@ -16,6 +16,7 @@
 		3CD242062AF1B9A500E47412 /* halloweencandyreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242052AF1B9A500E47412 /* halloweencandyreviewTests.swift */; };
 		3CD242102AF1B9A500E47412 /* halloweencandyreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2420F2AF1B9A500E47412 /* halloweencandyreviewUITests.swift */; };
 		3CD242122AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242112AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift */; };
+		3CD2421F2AF1C0E300E47412 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2421E2AF1C0E300E47412 /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CD2420B2AF1B9A500E47412 /* halloweencandyreviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = halloweencandyreviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD2420F2AF1B9A500E47412 /* halloweencandyreviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = halloweencandyreviewUITests.swift; sourceTree = "<group>"; };
 		3CD242112AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = halloweencandyreviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CD2421E2AF1C0E300E47412 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		3CD241E22AF1B9A400E47412 = {
 			isa = PBXGroup;
 			children = (
+				3CD2421E2AF1C0E300E47412 /* secondViewController.swift */,
 				3CD241ED2AF1B9A400E47412 /* halloweencandyreview */,
 				3CD242042AF1B9A500E47412 /* halloweencandyreviewTests */,
 				3CD2420E2AF1B9A500E47412 /* halloweencandyreviewUITests */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD2421F2AF1C0E300E47412 /* secondViewController.swift in Sources */,
 				3CD241F32AF1B9A400E47412 /* ViewController.swift in Sources */,
 				3CD241EF2AF1B9A400E47412 /* AppDelegate.swift in Sources */,
 				3CD241F12AF1B9A400E47412 /* SceneDelegate.swift in Sources */,
