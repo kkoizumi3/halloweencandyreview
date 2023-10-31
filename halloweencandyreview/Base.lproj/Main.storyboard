@@ -73,12 +73,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMl-k0-Ol3">
-                                <rect key="frame" x="134" y="563" width="125" height="35"/>
+                                <rect key="frame" x="134" y="598" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Trick or Treat"/>
                                 <connections>
                                     <action selector="trickOrTreatButton:" destination="LxL-jf-BfG" eventType="touchUpInside" id="0H3-ox-oIS"/>
+                                    <segue destination="b7d-yp-xZr" kind="show" id="HSl-TP-5Zr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,6 +91,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLk-YM-l4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2243.5114503816794" y="-386.61971830985919"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="ffA-4q-eSb">
+            <objects>
+                <viewController id="b7d-yp-xZr" customClass="fourthViewController" customModule="halloweencandyreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cO7-Bj-3mi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovb-KJ-4ZP">
+                                <rect key="frame" x="30" y="167" width="333" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-XJ-zoh">
+                                <rect key="frame" x="30" y="521" width="333" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-2w-bqW">
+                                <rect key="frame" x="31" y="266" width="331" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZnP-ey-yE7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sx3-jg-OdT"/>
+                    <connections>
+                        <outlet property="candyDesc" destination="YQt-XJ-zoh" id="UZM-t1-ugt"/>
+                        <outlet property="featCandyLabel" destination="Ovb-KJ-4ZP" id="4EZ-sa-gNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdU-z3-fWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3168.7022900763359" y="-452.11267605633805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QaK-uy-Bbw">
