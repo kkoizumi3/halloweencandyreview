@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwQ-I6-jn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2243.5114503816794" y="219.71830985915494"/>
+            <point key="canvasLocation" x="3170.2290076335876" y="219.71830985915494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Or-bo-Qe1">
@@ -103,6 +103,7 @@
                     <connections>
                         <segue destination="Wuo-Bw-6cc" kind="relationship" relationship="viewControllers" id="nde-1S-Wje"/>
                         <segue destination="eYC-Ds-cP3" kind="relationship" relationship="viewControllers" id="Te0-Ht-FCU"/>
+                        <segue destination="RJc-b1-9zs" kind="relationship" relationship="viewControllers" id="w3E-Am-RNk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFm-9H-0yL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,6 +129,46 @@
             </objects>
             <point key="canvasLocation" x="391.60305343511448" y="-386.61971830985919"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Duj-P3-2nB">
+            <objects>
+                <viewController id="VRF-4k-dAr" customClass="thirdViewController" customModule="halloweencandyreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Krk-es-x7x">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-fY-uge">
+                                <rect key="frame" x="26" y="478" width="340" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-fU-ImE">
+                                <rect key="frame" x="65" y="382" width="263" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-bC-hkm">
+                                <rect key="frame" x="51" y="103" width="290" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z9N-w1-emq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YDL-PE-kiH"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="bfU-fY-uge" id="Xit-et-0kr"/>
+                        <outlet property="titleLabel" destination="hrv-fU-ImE" id="AIr-lY-PSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBB-2E-XuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295.4198473282443" y="716.90140845070425"/>
+        </scene>
         <!--Chocolate-->
         <scene sceneID="71H-sb-8V5">
             <objects>
@@ -145,12 +186,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5N-I1-lAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316.793893129771" y="219.71830985915494"/>
+            <point key="canvasLocation" x="2243.5114503816794" y="219.71830985915494"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="fAW-NJ-7eg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RJc-b1-9zs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="person.fill" catalog="system" id="8sd-sz-yfo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5t3-Sw-QtQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VRF-4k-dAr" kind="relationship" relationship="rootViewController" id="GGl-rr-9Zd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dV5-EW-ft5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368.70229007633588" y="716.90140845070425"/>
         </scene>
     </scenes>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
