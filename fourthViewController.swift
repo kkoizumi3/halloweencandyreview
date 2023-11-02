@@ -19,6 +19,8 @@ class fourthViewController: UIViewController {
         featCandyLabel.text = "Dum Dums"
         candyDesc.text = "Dum Dums are a classic lollipop that come in an extreme variety of flavors."
         
+        self.title = "Kaci's Candy Review"
+        
         // Do any additional setup after loading the view.
     }
     

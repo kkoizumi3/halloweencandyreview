@@ -34,6 +34,7 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Kaci's Candy Review"
         // Do any additional setup after loading the view.
     }
     
