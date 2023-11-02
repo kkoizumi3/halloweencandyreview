@@ -9,13 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.title = "Kaci's Candy Review"
+        backgroundImage.image = UIImage (named: "candy review cm161")
+        self.navigationItem.title = "Kaci's Candy Review"
     }
 
     @IBAction func trickOrTreatButton(_ sender: Any)

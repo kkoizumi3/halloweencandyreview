@@ -18,13 +18,16 @@ class thirdViewController: UIViewController {
     
         descriptionLabel.text = "Hi! My name is Kaci, and I am an avid candy lover! I have been a trick-or-treater for many years. When I'm not reviewing and eating candy, I am a student at UHWO"
         
-        self.title = "Kaci's Candy Review"
+        self.navigationItem.title = "Kaci's Candy Review"
         // Do any additional setup after loading the view.
+        
+        aboutMe.image = UIImage (named: "Kaci.jpeg")
     }
     
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
-
+    @IBOutlet weak var aboutMe: UIImageView!
+    
 }

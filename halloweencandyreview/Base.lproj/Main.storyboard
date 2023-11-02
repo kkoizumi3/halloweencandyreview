@@ -72,8 +72,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="candy review cm161" translatesAutoresizingMaskIntoConstraints="NO" id="47c-uN-il7">
-                                <rect key="frame" x="0.0" y="103" width="393" height="649"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JK6-eR-0ex">
+                                <rect key="frame" x="16" y="103" width="361" height="666"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMl-k0-Ol3">
@@ -91,6 +91,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="67l-wL-ugx"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="JK6-eR-0ex" id="Vjg-ei-mJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLk-YM-l4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,8 +121,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dumdums" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-2w-bqW">
-                                <rect key="frame" x="31" y="266" width="331" height="247"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-1P-fUO">
+                                <rect key="frame" x="76" y="243" width="240" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -129,6 +132,7 @@
                     <navigationItem key="navigationItem" id="sx3-jg-OdT"/>
                     <connections>
                         <outlet property="candyDesc" destination="YQt-XJ-zoh" id="UZM-t1-ugt"/>
+                        <outlet property="featCandyImage" destination="tgX-1P-fUO" id="ZOg-Zt-9gm"/>
                         <outlet property="featCandyLabel" destination="Ovb-KJ-4ZP" id="4EZ-sa-gNs"/>
                     </connections>
                 </viewController>
@@ -196,8 +200,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kaci.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-bC-hkm">
-                                <rect key="frame" x="51" y="103" width="290" height="271"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yy5-m0-SrQ">
+                                <rect key="frame" x="76" y="103" width="240" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -206,6 +210,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YDL-PE-kiH"/>
                     <connections>
+                        <outlet property="aboutMe" destination="yy5-m0-SrQ" id="Itl-Fb-gg7"/>
                         <outlet property="descriptionLabel" destination="bfU-fY-uge" id="Xit-et-0kr"/>
                         <outlet property="titleLabel" destination="hrv-fU-ImE" id="AIr-lY-PSY"/>
                     </connections>
@@ -254,9 +259,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Kaci.jpeg" width="270" height="406"/>
-        <image name="candy review cm161" width="1080" height="1920"/>
-        <image name="dumdums" width="4000" height="6000"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

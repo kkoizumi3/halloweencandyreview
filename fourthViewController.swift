@@ -11,6 +11,7 @@ class fourthViewController: UIViewController {
 
     @IBOutlet weak var featCandyLabel: UILabel!
     @IBOutlet weak var candyDesc: UILabel!
+    @IBOutlet weak var featCandyImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -19,8 +20,8 @@ class fourthViewController: UIViewController {
         featCandyLabel.text = "Dum Dums"
         candyDesc.text = "Dum Dums are a classic lollipop that come in an extreme variety of flavors."
         
-        self.title = "Kaci's Candy Review"
-        
+        self.navigationItem.title = "Kaci's Candy Review"
+        featCandyImage.image = UIImage (named: "dumdums")
         // Do any additional setup after loading the view.
     }
     
