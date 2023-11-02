@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMl-k0-Ol3">
-                                <rect key="frame" x="134" y="463" width="125" height="42"/>
+                                <rect key="frame" x="134" y="550" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Trick or Treat"/>
@@ -86,6 +86,17 @@
                                     <segue destination="b7d-yp-xZr" kind="show" id="HSl-TP-5Zr"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-Dd-XE9">
+                                <rect key="frame" x="78" y="346" width="240" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohk-hm-ui2">
+                                <rect key="frame" x="60" y="317" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mpP-HX-Wa0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,6 +104,8 @@
                     <navigationItem key="navigationItem" id="67l-wL-ugx"/>
                     <connections>
                         <outlet property="backgroundImage" destination="JK6-eR-0ex" id="Vjg-ei-mJh"/>
+                        <outlet property="dumDumsFeatImage" destination="f4t-Dd-XE9" id="Wea-tN-q3w"/>
+                        <outlet property="featCandyLabel" destination="ohk-hm-ui2" id="08s-oy-R90"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLk-YM-l4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
