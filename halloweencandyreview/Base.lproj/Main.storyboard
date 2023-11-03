@@ -44,6 +44,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2g0-zc-1RJ" kind="show" identifier="mySegue" id="RZv-uj-4cj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -63,6 +66,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwQ-I6-jn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3170.2290076335876" y="219.71830985915494"/>
+        </scene>
+        <!--Second Detail View Controller-->
+        <scene sceneID="USW-oi-ws1">
+            <objects>
+                <viewController id="2g0-zc-1RJ" customClass="secondDetailViewController" customModule="halloweencandyreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEk-IR-6qJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nh0-NC-20W">
+                                <rect key="frame" x="76" y="299" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="74q-gR-WlE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h7A-xC-eKl"/>
+                    <connections>
+                        <outlet property="candyImage" destination="Nh0-NC-20W" id="Ng3-cJ-XlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87C-MQ-XNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3944" y="220"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Or-bo-Qe1">

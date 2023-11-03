@@ -29,24 +29,35 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
                        return cell
 
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                {
+                    tableView.deselectRow(at: indexPath, animated: true)
+                }
     
-
+    var categoryOneImagesData = [String]()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "mySegue"
+                {
+                    let s1 = segue.destination as! secondDetailViewController
+                    let imageIndex = tableView.indexPathForSelectedRow?.row
+                    s1.imagePass = categoryOneImagesData[imageIndex!]
+                }
+            }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "Kaci's Candy Review"
         // Do any additional setup after loading the view.
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        categoryOneImagesData = dict!.object(forKey:"CategoryOneImages") as! [String]
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

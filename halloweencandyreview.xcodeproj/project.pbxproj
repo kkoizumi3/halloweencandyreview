@@ -20,6 +20,8 @@
 		3CD242212AF1C5DA00E47412 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242202AF1C5DA00E47412 /* thirdViewController.swift */; };
 		3CD242232AF1CAD100E47412 /* featuredcandyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */; };
 		3CD242252AF1CAFF00E47412 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242242AF1CAFF00E47412 /* fourthViewController.swift */; };
+		3CD70F512AF45E30007006EA /* secondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD70F502AF45E30007006EA /* secondDetailViewController.swift */; };
+		3CD70F532AF45EC7007006EA /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CD70F522AF45EC7007006EA /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3CD242202AF1C5DA00E47412 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = featuredcandyViewController.swift; sourceTree = "<group>"; };
 		3CD242242AF1CAFF00E47412 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
+		3CD70F502AF45E30007006EA /* secondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondDetailViewController.swift; sourceTree = "<group>"; };
+		3CD70F522AF45EC7007006EA /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		3CD241E22AF1B9A400E47412 = {
 			isa = PBXGroup;
 			children = (
+				3CD70F502AF45E30007006EA /* secondDetailViewController.swift */,
+				3CD70F522AF45EC7007006EA /* Property List.plist */,
 				3CD242242AF1CAFF00E47412 /* fourthViewController.swift */,
 				3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */,
 				3CD242202AF1C5DA00E47412 /* thirdViewController.swift */,
@@ -245,6 +251,7 @@
 			files = (
 				3CD241FB2AF1B9A500E47412 /* LaunchScreen.storyboard in Resources */,
 				3CD241F82AF1B9A500E47412 /* Assets.xcassets in Resources */,
+				3CD70F532AF45EC7007006EA /* Property List.plist in Resources */,
 				3CD241F62AF1B9A400E47412 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,7 @@
 			files = (
 				3CD2421F2AF1C0E300E47412 /* secondViewController.swift in Sources */,
 				3CD241F32AF1B9A400E47412 /* ViewController.swift in Sources */,
+				3CD70F512AF45E30007006EA /* secondDetailViewController.swift in Sources */,
 				3CD242252AF1CAFF00E47412 /* fourthViewController.swift in Sources */,
 				3CD242212AF1C5DA00E47412 /* thirdViewController.swift in Sources */,
 				3CD241EF2AF1B9A400E47412 /* AppDelegate.swift in Sources */,
