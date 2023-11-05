@@ -11,9 +11,9 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
-    var myChocoArray = ["KitKat", "Hershey's", "M&M's", "Snickers"]
+    var myChocoArray = ["KitKat", "M&M's", "Snickers", "Hershey's"]
 
-    var candyStarRating = ["5 stars", "3 stars", "4 stars", "4 stars"]
+    var candyStarRating = ["5 stars", "4 stars", "4 stars", "3 stars"]
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
