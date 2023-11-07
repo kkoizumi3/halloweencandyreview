@@ -8,15 +8,29 @@
 import UIKit
 
 class sixthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
     
     var myHardCandy = ["DumDums", "Tootsie Pops", "Skittles", "Sweetarts"]
     var hardCandyRating = ["5 stars", "5 stars", "4 stars", "2 stars"]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                    {
+                        tableView.deselectRow(at: indexPath, animated: true)
+                    }
+    
+    
+    var categoryThreeImagesData = [String]()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                
+        if segue.identifier == "mySegue"
+                {
+                    let s1 = segue.destination as! fourthDetailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+                    s1.imagePass = categoryThreeImagesData[imageIndex!]
+                }
+            }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -30,6 +44,19 @@ class sixthViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.detailTextLabel?.text = hardCandyRating[indexPath.row]
         cell.textLabel?.text = text
         return cell
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        let path = Bundle.main.path(forResource: "Property List Three", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        categoryThreeImagesData = dict!.object(forKey:"CategoryThreeImages") as! [String]
+    }
+        
+        
+        
         
         /*
          // MARK: - Navigation
@@ -42,4 +69,3 @@ class sixthViewController: UIViewController, UITableViewDataSource, UITableViewD
          */
         
     }
-}

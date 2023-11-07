@@ -9,15 +9,11 @@ import UIKit
 
 class fifthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var myGummyArray = ["Gummy Bears", "Gummy Worms", "Rainbow Belts", "Starbursts"]
     var candyStarRatingGummy = ["5 stars", "4 stars", "4 stars", "4 stars"]
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -31,17 +27,36 @@ class fifthViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.detailTextLabel?.text = candyStarRatingGummy[indexPath.row]
         cell.textLabel?.text = text
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                {
+                    tableView.deselectRow(at: indexPath, animated: true)
+                }
+    
+    var categoryTwoImagesData = [String]()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                
+        if segue.identifier == "mySegue"
+                {
+                    let s1 = segue.destination as! thirdDetailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+                    s1.imagePass = categoryTwoImagesData[imageIndex!]
+                }
+            }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
+        // Do any additional setup after loading the view.
+        let path = Bundle.main.path(forResource: "Property List Two", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        categoryTwoImagesData = dict!.object(forKey:"CategoryTwoImages") as! [String]
+    }
+    
+   
         
     }
-}
+

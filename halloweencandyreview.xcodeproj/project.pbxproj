@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3C1F21982AF7481300B60D5D /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F21972AF7481300B60D5D /* fifthViewController.swift */; };
 		3C1F219A2AF7482F00B60D5D /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F21992AF7482F00B60D5D /* sixthViewController.swift */; };
+		3C29F5142AFAF6DB0060F7EC /* thirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29F5132AFAF6DB0060F7EC /* thirdDetailViewController.swift */; };
+		3C29F5162AFAF6E80060F7EC /* fourthDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29F5152AFAF6E80060F7EC /* fourthDetailViewController.swift */; };
+		3C29F5182AFAF8100060F7EC /* Property List Two.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C29F5172AFAF8100060F7EC /* Property List Two.plist */; };
+		3C29F51A2AFB01FA0060F7EC /* Property List Three.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C29F5192AFB01FA0060F7EC /* Property List Three.plist */; };
 		3CD241EF2AF1B9A400E47412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD241EE2AF1B9A400E47412 /* AppDelegate.swift */; };
 		3CD241F12AF1B9A400E47412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD241F02AF1B9A400E47412 /* SceneDelegate.swift */; };
 		3CD241F32AF1B9A400E47412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD241F22AF1B9A400E47412 /* ViewController.swift */; };
@@ -20,7 +24,6 @@
 		3CD242122AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242112AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift */; };
 		3CD2421F2AF1C0E300E47412 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2421E2AF1C0E300E47412 /* secondViewController.swift */; };
 		3CD242212AF1C5DA00E47412 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242202AF1C5DA00E47412 /* thirdViewController.swift */; };
-		3CD242232AF1CAD100E47412 /* featuredcandyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */; };
 		3CD242252AF1CAFF00E47412 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD242242AF1CAFF00E47412 /* fourthViewController.swift */; };
 		3CD70F512AF45E30007006EA /* secondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD70F502AF45E30007006EA /* secondDetailViewController.swift */; };
 		3CD70F532AF45EC7007006EA /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CD70F522AF45EC7007006EA /* Property List.plist */; };
@@ -46,6 +49,10 @@
 /* Begin PBXFileReference section */
 		3C1F21972AF7481300B60D5D /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
 		3C1F21992AF7482F00B60D5D /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
+		3C29F5132AFAF6DB0060F7EC /* thirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdDetailViewController.swift; sourceTree = "<group>"; };
+		3C29F5152AFAF6E80060F7EC /* fourthDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthDetailViewController.swift; sourceTree = "<group>"; };
+		3C29F5172AFAF8100060F7EC /* Property List Two.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List Two.plist"; sourceTree = "<group>"; };
+		3C29F5192AFB01FA0060F7EC /* Property List Three.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List Three.plist"; sourceTree = "<group>"; };
 		3CD241EB2AF1B9A400E47412 /* halloweencandyreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = halloweencandyreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD241EE2AF1B9A400E47412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD241F02AF1B9A400E47412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +68,6 @@
 		3CD242112AF1B9A500E47412 /* halloweencandyreviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = halloweencandyreviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3CD2421E2AF1C0E300E47412 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		3CD242202AF1C5DA00E47412 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
-		3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = featuredcandyViewController.swift; sourceTree = "<group>"; };
 		3CD242242AF1CAFF00E47412 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		3CD70F502AF45E30007006EA /* secondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondDetailViewController.swift; sourceTree = "<group>"; };
 		3CD70F522AF45EC7007006EA /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
@@ -95,12 +101,15 @@
 		3CD241E22AF1B9A400E47412 = {
 			isa = PBXGroup;
 			children = (
+				3C29F5192AFB01FA0060F7EC /* Property List Three.plist */,
+				3C29F5172AFAF8100060F7EC /* Property List Two.plist */,
+				3C29F5132AFAF6DB0060F7EC /* thirdDetailViewController.swift */,
+				3C29F5152AFAF6E80060F7EC /* fourthDetailViewController.swift */,
 				3C1F21992AF7482F00B60D5D /* sixthViewController.swift */,
 				3C1F21972AF7481300B60D5D /* fifthViewController.swift */,
 				3CD70F502AF45E30007006EA /* secondDetailViewController.swift */,
 				3CD70F522AF45EC7007006EA /* Property List.plist */,
 				3CD242242AF1CAFF00E47412 /* fourthViewController.swift */,
-				3CD242222AF1CAD100E47412 /* featuredcandyViewController.swift */,
 				3CD242202AF1C5DA00E47412 /* thirdViewController.swift */,
 				3CD2421E2AF1C0E300E47412 /* secondViewController.swift */,
 				3CD241ED2AF1B9A400E47412 /* halloweencandyreview */,
@@ -259,6 +268,8 @@
 				3CD241F82AF1B9A500E47412 /* Assets.xcassets in Resources */,
 				3CD70F532AF45EC7007006EA /* Property List.plist in Resources */,
 				3CD241F62AF1B9A400E47412 /* Main.storyboard in Resources */,
+				3C29F51A2AFB01FA0060F7EC /* Property List Three.plist in Resources */,
+				3C29F5182AFAF8100060F7EC /* Property List Two.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +295,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD2421F2AF1C0E300E47412 /* secondViewController.swift in Sources */,
+				3C29F5142AFAF6DB0060F7EC /* thirdDetailViewController.swift in Sources */,
 				3CD241F32AF1B9A400E47412 /* ViewController.swift in Sources */,
 				3CD70F512AF45E30007006EA /* secondDetailViewController.swift in Sources */,
 				3CD242252AF1CAFF00E47412 /* fourthViewController.swift in Sources */,
 				3CD242212AF1C5DA00E47412 /* thirdViewController.swift in Sources */,
 				3C1F219A2AF7482F00B60D5D /* sixthViewController.swift in Sources */,
 				3CD241EF2AF1B9A400E47412 /* AppDelegate.swift in Sources */,
-				3CD242232AF1CAD100E47412 /* featuredcandyViewController.swift in Sources */,
 				3CD241F12AF1B9A400E47412 /* SceneDelegate.swift in Sources */,
+				3C29F5162AFAF6E80060F7EC /* fourthDetailViewController.swift in Sources */,
 				3C1F21982AF7481300B60D5D /* fifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
