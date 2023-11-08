@@ -49,6 +49,7 @@ class fifthViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Kaci's Candy Review"
         
         // Do any additional setup after loading the view.
         let path = Bundle.main.path(forResource: "Property List Two", ofType: "plist")

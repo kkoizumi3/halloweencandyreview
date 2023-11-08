@@ -48,6 +48,7 @@ class sixthViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Kaci's Candy Review"
         
         // Do any additional setup after loading the view.
         let path = Bundle.main.path(forResource: "Property List Three", ofType: "plist")
@@ -58,14 +59,6 @@ class sixthViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         
         
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
+        
         
     }
